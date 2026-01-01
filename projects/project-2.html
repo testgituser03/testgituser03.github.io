@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MCP Server Platform — Model Context Protocol server exposing AI tools via REST API with Azure Blob Storage integration on Kubernetes.">
+    <link rel="canonical" href="https://vaishnaviai.tech/projects/project-2.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>MCP Server Platform — Vaishnavi N</title>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav__container">
+            <div class="nav__brand">
+                <a href="../index.html" aria-label="Home">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect width="40" height="40" rx="8" fill="url(#gradient)"/>
+                        <path d="M12 28V12H16V24H24V28H12Z" fill="white"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#6366f1"/>
+                                <stop offset="1" stop-color="#8b5cf6"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </a>
+            </div>
+            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item"><a href="../index.html#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="../index.html#skills" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="../index.html#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="../index.html#contact" class="nav__link">Contact</a></li>
+                <li class="nav__item">
+                    <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                        <svg class="theme-toggle__icon theme-toggle__icon--moon" width="22" height="22" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                        </svg>
+                        <svg class="theme-toggle__icon theme-toggle__icon--sun" width="22" height="22" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        <article class="project-detail">
+            <header class="project-detail__header">
+                <div class="container">
+                    <a href="../index.html#projects" class="project-detail__back">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 10H5M5 10L10 15M5 10L10 5"/>
+                        </svg>
+                        Back to Projects
+                    </a>
+                    <h1 class="project-detail__title">MCP Server Platform</h1>
+                    <p class="project-detail__subtitle">
+                        Extensible Model Context Protocol server with dynamic tool registry and Azure integration
+                    </p>
+                    <div class="project-detail__meta">
+                        <span class="project-detail__meta-item">
+                            <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                            </svg>
+                            Oct 2024 – Dec 2024
+                        </span>
+                        <span class="project-detail__meta-item">
+                            <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/>
+                            </svg>
+                            Grid Dynamics
+                        </span>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="project-detail__section">
+                <div class="container">
+                    <div class="project-detail__image">
+                        <img src="../assets/images/mcp.png" 
+                             alt="MCP Server Architecture showing CSV-driven tool registry and Azure Blob Storage integration"
+                             loading="lazy">
+                    </div>
+                </div>
+            </section>
+            
+            <section class="project-detail__section">
+                <div class="container">
+                    <div class="project-detail__content">
+                        <h2>Overview</h2>
+                        <p>
+                            The MCP (Model Context Protocol) Server Platform is a flexible, production-grade service 
+                            that exposes AI tools through a unified REST API interface. Built to integrate with Azure 
+                            AI services, the platform enables seamless tool discovery, execution, and management for 
+                            large language models and AI agents.
+                        </p>
+                        
+                        <h2>The Problem</h2>
+                        <p>
+                            Organizations using Azure AI services needed a standardized way to:
+                        </p>
+                        <ul>
+                            <li>Expose custom AI tools to language models without redeploying services</li>
+                            <li>Handle large file uploads and downloads efficiently without memory bottlenecks</li>
+                            <li>Provide async execution for long-running AI operations</li>
+                            <li>Maintain a centralized registry of available tools with version control</li>
+                            <li>Deploy and scale on Kubernetes with minimal operational overhead</li>
+                        </ul>
+                        
+                        <h2>Architecture & Design</h2>
+                        
+                        <h3>Core Components</h3>
+                        <ul>
+                            <li>
+                                <strong>FastAPI REST API:</strong> High-performance async API server with automatic 
+                                OpenAPI documentation and request validation using Pydantic models
+                            </li>
+                            <li>
+                                <strong>CSV-Driven Tool Registry:</strong> Dynamic tool discovery system allowing 
+                                administrators to add new tools by updating a CSV configuration file without code changes
+                            </li>
+                            <li>
+                                <strong>Runtime Module Loading:</strong> Python importlib-based system that dynamically 
+                                loads tool implementations from specified modules at startup
+                            </li>
+                            <li>
+                                <strong>Claim Check Pattern:</strong> Efficient handling of large files by storing them 
+                                in Azure Blob Storage and passing only references through the API
+                            </li>
+                            <li>
+                                <strong>Azure Blob Storage Integration:</strong> Secure, scalable storage for tool inputs 
+                                and outputs with automatic cleanup policies
+                            </li>
+                            <li>
+                                <strong>Azure Key Vault:</strong> Centralized secret management for API keys, connection 
+                                strings, and service credentials
+                            </li>
+                        </ul>
+                        
+                        <h3>Tool Registry System</h3>
+                        <p>
+                            The CSV-driven tool registry is a key innovation that enables non-developers to add new 
+                            capabilities:
+                        </p>
+                        <pre><code>tool_name,module_path,description,version,enabled
+image_classifier,tools.vision.classifier,Classify images using CLIP,1.0,true
+text_summarizer,tools.nlp.summarizer,Summarize long documents,1.2,true
+sentiment_analyzer,tools.nlp.sentiment,Analyze text sentiment,1.0,true</code></pre>
+                        <p>
+                            The server reads this CSV at startup, validates each entry, and dynamically imports the 
+                            specified Python modules. Each tool must implement a standard interface ensuring consistent 
+                            behavior.
+                        </p>
+                        
+                        <h2>Implementation Highlights</h2>
+                        
+                        <h3>Async Request Handling</h3>
+                        <p>
+                            All tool executions are async-first to prevent blocking operations:
+                        </p>
+                        <ul>
+                            <li>Used asyncio for I/O-bound operations (API calls, file uploads)</li>
+                            <li>Implemented thread pools for CPU-bound tasks (ML inference)</li>
+                            <li>Added request timeout middleware preventing resource exhaustion</li>
+                            <li>Built retry logic with exponential backoff for transient failures</li>
+                        </ul>
+                        
+                        <h3>Secure File Handling</h3>
+                        <p>
+                            The Claim Check pattern dramatically improved performance and security:
+                        </p>
+                        <ul>
+                            <li>Large files uploaded directly to Azure Blob Storage via SAS tokens</li>
+                            <li>API receives only a blob reference (URI) keeping payloads small</li>
+                            <li>Tools fetch files from Blob Storage only when needed</li>
+                            <li>Automatic cleanup of temporary files after configurable TTL (default 24 hours)</li>
+                            <li>Virus scanning integration before file processing</li>
+                        </ul>
+                        
+                        <h3>Kubernetes Deployment</h3>
+                        <p>
+                            Deployed to Azure Kubernetes Service (AKS) with production-grade configuration:
+                        </p>
+                        <ul>
+                            <li>Horizontal Pod Autoscaler (HPA) based on CPU and memory metrics</li>
+                            <li>Health check endpoints (liveness and readiness probes)</li>
+                            <li>Secrets injected via Azure Key Vault CSI driver</li>
+                            <li>Logging to Azure Monitor with structured JSON output</li>
+                            <li>Blue-green deployments for zero-downtime updates</li>
+                        </ul>
+                        
+                        <h2>Exposed AI Tools</h2>
+                        <p>The platform currently exposes 9 AI tools across different categories:</p>
+                        
+                        <div class="feature-grid">
+                            <div class="feature-card">
+                                <h3>Vision Tools</h3>
+                                <ul>
+                                    <li>Image classification (CLIP-based)</li>
+                                    <li>Object detection (YOLO)</li>
+                                    <li>OCR and document extraction</li>
+                                </ul>
+                            </div>
+                            <div class="feature-card">
+                                <h3>NLP Tools</h3>
+                                <ul>
+                                    <li>Text summarization</li>
+                                    <li>Sentiment analysis</li>
+                                    <li>Named entity recognition</li>
+                                </ul>
+                            </div>
+                            <div class="feature-card">
+                                <h3>Utility Tools</h3>
+                                <ul>
+                                    <li>Document conversion (PDF to text)</li>
+                                    <li>Language translation</li>
+                                    <li>Data validation and cleaning</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <h2>Technical Stack</h2>
+                        <div class="tech-stack">
+                            <div class="tech-stack__list">
+                                <span class="tech-badge">Python 3.11</span>
+                                <span class="tech-badge">FastAPI</span>
+                                <span class="tech-badge">Azure Blob Storage</span>
+                                <span class="tech-badge">Azure Key Vault</span>
+                                <span class="tech-badge">AKS (Kubernetes)</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">Pydantic</span>
+                                <span class="tech-badge">asyncio</span>
+                            </div>
+                        </div>
+                        
+                        <h2>Performance & Scale</h2>
+                        <ul class="results-list">
+                            <li>Handles 500+ concurrent tool executions per pod</li>
+                            <li>Average API response time under 200ms for tool discovery</li>
+                            <li>Successfully processed files up to 500MB using claim check pattern</li>
+                            <li>Achieved 99.9% uptime across 3-month production period</li>
+                            <li>Scales from 2 to 20 pods based on load (HPA configured)</li>
+                            <li>Zero-downtime deployments with rolling updates</li>
+                        </ul>
+                        
+                        <h2>Key Learnings</h2>
+                        <ul>
+                            <li>
+                                <strong>Dynamic Configuration is Powerful:</strong> The CSV-driven registry allowed 
+                                non-developers to add tools, significantly reducing deployment cycles.
+                            </li>
+                            <li>
+                                <strong>Claim Check Pattern for Files:</strong> Moving large files out of the API 
+                                request path improved response times by 10x and eliminated memory issues.
+                            </li>
+                            <li>
+                                <strong>Observability from Day One:</strong> Structured logging and metrics collection 
+                                made debugging production issues much easier than anticipated.
+                            </li>
+                            <li>
+                                <strong>Kubernetes Complexity:</strong> While powerful, K8s required significant 
+                                operational knowledge. Proper health checks and resource limits were critical.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="project-detail__section project-detail__section--alt">
+                <div class="container">
+                    <div class="project-detail__cta">
+                        <h2>Want to Learn More?</h2>
+                        <p>
+                            I'm happy to dive deeper into the technical architecture or discuss how 
+                            similar patterns could be applied to your infrastructure.
+                        </p>
+                        <div class="project-detail__cta-buttons">
+                            <a href="../index.html#contact" class="btn btn--primary">Get In Touch</a>
+                            <a href="../index.html#projects" class="btn btn--secondary">View More Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">&copy; 2025 Vaishnavi N.</p>
+                <div class="footer__social">
+                    <a href="https://linkedin.com/in/vaishnavi-nissankararao" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/vaishnavin" class="footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:vaishnavivyshu6265@gmail.com" class="footer__social-link" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

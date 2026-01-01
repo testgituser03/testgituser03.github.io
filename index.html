@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vaishnavi N — Data Scientist & AI Engineer portfolio showcasing production-grade AI systems, RAG pipelines, and multimodal AI projects.">
+    <meta name="author" content="Vaishnavi N">
+    <meta name="keywords" content="data science, AI engineer, machine learning, RAG, generative AI, NLP, portfolio">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Vaishnavi N — Data Scientist & AI Engineer">
+    <meta property="og:description" content="Explore my work in Generative AI, RAG systems, and production ML applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vaishnaviai.tech">
+    <meta property="og:image" content="https://vaishnaviai.tech/assets/images/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vaishnavi N — Data Scientist & AI Engineer">
+    <meta name="twitter:description" content="Explore my work in Generative AI, RAG systems, and production ML applications.">
+    <meta name="twitter:image" content="https://vaishnaviai.tech/assets/images/og-image.png">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://vaishnaviai.tech">
+    
+    <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload hero image for LCP optimization -->
+    <link rel="preload" as="image" href="assets/images/hero-bg.avif" type="image/avif">
+    
+    <!-- Critical inline CSS for above-the-fold content -->
+    <style>
+        :root {
+            --color-primary: #6366f1;
+            --color-bg: #0f172a;
+            --color-text: #e2e8f0;
+            --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: var(--font-primary); background: var(--color-bg); color: var(--color-text); line-height: 1.6; }
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    </style>
+    
+    <!-- Main stylesheet loaded with high priority -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Vaishnavi N — Data Scientist & AI Engineer</title>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vaishnavi N",
+      "jobTitle": "Junior Data Scientist",
+      "url": "https://vaishnaviai.tech",
+      "sameAs": [
+        "https://linkedin.com/in/vaishnavi-nissankararao",
+        "https://github.com/vaishnavin"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Grid Dynamics"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Kallam Haranadhareddy Institute of Technology"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation - Premium Enterprise Design -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav__container">
+            <!-- Logo with name -->
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo-link" aria-label="Home">
+                    <!-- Animated SVG logo -->
+                    <svg class="nav__logo-icon" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect width="44" height="44" rx="10" fill="url(#nav-gradient)" class="logo-bg"/>
+                        <path d="M13 30V13H18V26H26V30H13Z" fill="white" class="logo-letter"/>
+                        <circle cx="30" cy="17" r="3" fill="#ec4899" class="logo-dot"/>
+                        <defs>
+                            <linearGradient id="nav-gradient" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#6366f1"/>
+                                <stop offset="0.5" stop-color="#8b5cf6"/>
+                                <stop offset="1" stop-color="#ec4899"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="nav__logo-text">
+                        <span class="nav__logo-name">Vaishnavi N</span>
+                        <span class="nav__logo-tag">Data Scientist</span>
+                    </span>
+                </a>
+            </div>
+            
+            <!-- Mobile menu toggle -->
+            <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+                <span class="nav__toggle-line"></span>
+            </button>
+            
+            <!-- Navigation menu -->
+            <ul class="nav__menu" id="nav-menu">
+                <li class="nav__item">
+                    <a href="#about" class="nav__link" data-section="about">
+                        <span class="nav__link-text">About</span>
+                        <span class="nav__link-indicator" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link" data-section="skills">
+                        <span class="nav__link-text">Skills</span>
+                        <span class="nav__link-indicator" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link" data-section="projects">
+                        <span class="nav__link-text">Projects</span>
+                        <span class="nav__link-indicator" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link" data-section="contact">
+                        <span class="nav__link-text">Contact</span>
+                        <span class="nav__link-indicator" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li class="nav__item nav__item--divider" aria-hidden="true"></li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__cta btn btn--small btn--primary">
+                        <span>Hire Me</span>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                            <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                        <svg class="theme-toggle__icon theme-toggle__icon--moon" width="22" height="22" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                        </svg>
+                        <svg class="theme-toggle__icon theme-toggle__icon--sun" width="22" height="22" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section - Enterprise Grade -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <!-- Animated Background Layers -->
+            <div class="hero__bg" aria-hidden="true">
+                <!-- Gradient Orbs -->
+                <div class="hero__orb hero__orb--primary"></div>
+                <div class="hero__orb hero__orb--secondary"></div>
+                <div class="hero__orb hero__orb--accent"></div>
+                
+                <!-- Grid Pattern -->
+                <div class="hero__grid">
+                    <div class="hero__grid-line" style="--delay: 0s"></div>
+                    <div class="hero__grid-line" style="--delay: 0.2s"></div>
+                    <div class="hero__grid-line" style="--delay: 0.4s"></div>
+                    <div class="hero__grid-line" style="--delay: 0.6s"></div>
+                </div>
+                
+                <!-- Floating Particles -->
+                <div class="hero__particles">
+                    <span class="hero__particle" style="--x: 20%; --y: 30%; --duration: 8s; --delay: 0s"></span>
+                    <span class="hero__particle" style="--x: 80%; --y: 50%; --duration: 10s; --delay: 1s"></span>
+                    <span class="hero__particle" style="--x: 50%; --y: 70%; --duration: 12s; --delay: 2s"></span>
+                    <span class="hero__particle" style="--x: 10%; --y: 80%; --duration: 9s; --delay: 0.5s"></span>
+                    <span class="hero__particle" style="--x: 90%; --y: 20%; --duration: 11s; --delay: 1.5s"></span>
+                </div>
+            </div>
+            
+            <div class="hero__container">
+                <div class="hero__content">
+                    <!-- Status Badge -->
+                    <div class="hero__badge">
+                        <span class="hero__badge-dot"></span>
+                        <span class="hero__badge-text">Available for opportunities</span>
+                    </div>
+                    
+                    <p class="hero__greeting" aria-label="Greeting">Hello, I'm</p>
+                    <h1 id="hero-heading" class="hero__title">
+                        <span class="hero__title-line">Vaishnavi N</span>
+                        <span class="hero__title-gradient" aria-hidden="true">Vaishnavi N</span>
+                    </h1>
+                    <p class="hero__subtitle">
+                        <span class="hero__subtitle-highlight">Data Scientist</span>
+                        <span class="hero__subtitle-separator">•</span>
+                        <span class="hero__subtitle-highlight">AI Engineer</span>
+                    </p>
+                    <p class="hero__description">
+                        I build <span class="hero__highlight">production-grade AI systems</span> with 2+ years of experience in 
+                        <span class="hero__highlight">Generative AI</span>, RAG pipelines, and multimodal retrieval. 
+                        Specializing in LLMs, vector search, and scalable ML architectures.
+                    </p>
+                    
+                    <!-- Stats Row -->
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">2+</span>
+                            <span class="hero__stat-label">Years Exp</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">8+</span>
+                            <span class="hero__stat-label">Projects</span>
+                        </div>
+                        <div class="hero__stat">
+                            <span class="hero__stat-number">92%</span>
+                            <span class="hero__stat-label">Accuracy</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero__cta">
+                        <a href="#projects" class="btn btn--primary btn--hero">
+                            <span>View My Work</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 10h10m-5-5l5 5-5 5"/>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn--secondary btn--hero">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Social Proof -->
+                    <div class="hero__social-proof">
+                        <span class="hero__social-text">Currently at</span>
+                        <span class="hero__company">Grid Dynamics</span>
+                    </div>
+                </div>
+                
+                <!-- Hero Visual - AI Terminal Interface -->
+                <div class="hero__visual" aria-hidden="true">
+                    <div class="hero__card hero__card--terminal">
+                        <div class="hero__card-glow"></div>
+
+                        <!-- Terminal Header -->
+                        <div class="hero__terminal-header">
+                            <div class="hero__terminal-controls">
+                                <span class="hero__terminal-dot hero__terminal-dot--red"></span>
+                                <span class="hero__terminal-dot hero__terminal-dot--yellow"></span>
+                                <span class="hero__terminal-dot hero__terminal-dot--green"></span>
+                            </div>
+                            <div class="hero__terminal-title">ai-terminal ~ vaishnavi</div>
+                            <div class="hero__terminal-status">
+                                <span class="hero__status-pulse"></span>
+                                <span class="hero__status-text">AI Active</span>
+                            </div>
+                        </div>
+
+                        <!-- Terminal Content -->
+                        <div class="hero__terminal-content">
+                            <div class="hero__terminal-output">
+                                <div class="hero__terminal-line">
+                                    <span class="hero__terminal-prompt">vaishnavi@ai-engine:~$</span>
+                                    <span class="hero__terminal-command">python rag_pipeline.py --model gpt-4 --accuracy 94.7</span>
+                                </div>
+                                <div class="hero__terminal-line">
+                                    <span class="hero__terminal-output-text">Initializing RAG system...</span>
+                                </div>
+                                <div class="hero__terminal-line">
+                                    <span class="hero__terminal-output-text">Loading embeddings: <span class="hero__terminal-highlight">768-dim</span></span>
+                                </div>
+                                <div class="hero__terminal-line">
+                                    <span class="hero__terminal-output-text">Vector database: <span class="hero__terminal-success">Connected</span></span>
+                                </div>
+                                <div class="hero__terminal-line">
+                                    <span class="hero__terminal-output-text">Model accuracy: <span class="hero__terminal-metric">94.7%</span></span>
+                                </div>
+                                <div class="hero__terminal-line">
+                                    <span class="hero__terminal-output-text">Processing query: "enterprise ai solutions"</span>
+                                </div>
+                                <div class="hero__terminal-line hero__terminal-line--active">
+                                    <span class="hero__terminal-cursor">█</span>
+                                </div>
+                            </div>
+
+                            <!-- System Metrics Sidebar -->
+                            <div class="hero__terminal-sidebar">
+                                <div class="hero__metric-display">
+                                    <div class="hero__metric-item">
+                                        <span class="hero__metric-label">CPU</span>
+                                        <div class="hero__metric-bar">
+                                            <div class="hero__metric-fill" style="--percentage: 67%"></div>
+                                        </div>
+                                        <span class="hero__metric-value">67%</span>
+                                    </div>
+                                    <div class="hero__metric-item">
+                                        <span class="hero__metric-label">MEM</span>
+                                        <div class="hero__metric-bar">
+                                            <div class="hero__metric-fill" style="--percentage: 82%"></div>
+                                        </div>
+                                        <span class="hero__metric-value">82%</span>
+                                    </div>
+                                    <div class="hero__metric-item">
+                                        <span class="hero__metric-label">GPU</span>
+                                        <div class="hero__metric-bar">
+                                            <div class="hero__metric-fill" style="--percentage: 91%"></div>
+                                        </div>
+                                        <span class="hero__metric-value">91%</span>
+                                    </div>
+                                </div>
+
+                                <!-- Network Activity -->
+                                <div class="hero__network-activity">
+                                    <div class="hero__network-header">Network I/O</div>
+                                    <div class="hero__network-graph">
+                                        <div class="hero__network-bar" style="--height: 30%"></div>
+                                        <div class="hero__network-bar" style="--height: 60%"></div>
+                                        <div class="hero__network-bar" style="--height: 45%"></div>
+                                        <div class="hero__network-bar" style="--height: 80%"></div>
+                                        <div class="hero__network-bar" style="--height: 55%"></div>
+                                        <div class="hero__network-bar" style="--height: 70%"></div>
+                                        <div class="hero__network-bar" style="--height: 35%"></div>
+                                        <div class="hero__network-bar" style="--height: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Processing Indicator -->
+                        <div class="hero__processing-indicator">
+                            <div class="hero__processing-dots">
+                                <span class="hero__processing-dot"></span>
+                                <span class="hero__processing-dot"></span>
+                                <span class="hero__processing-dot"></span>
+                            </div>
+                            <span class="hero__processing-text">AI Processing...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator - Enhanced -->
+            <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+                <span class="scroll-indicator__line"></span>
+                <span class="scroll-indicator__text">Scroll</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="7 13 12 18 17 13"></polyline>
+                    <polyline points="7 6 12 11 17 6"></polyline>
+                </svg>
+            </a>
+        </section>
+        
+        <!-- About Section - Enterprise Professional Design -->
+        <section id="about" class="section about" aria-labelledby="about-heading">
+            <div class="container">
+                <!-- Executive Header -->
+                <div class="about__executive-header">
+                    <div class="about__executive-badge">
+                        <div class="about__badge-line"></div>
+                        <span class="about__badge-text">Professional Profile</span>
+                        <div class="about__badge-line"></div>
+                    </div>
+                    <h2 id="about-heading" class="about__executive-title">About Me</h2>
+                    <p class="about__executive-subtitle">
+                        Data Scientist & AI Engineer specializing in production-grade intelligent systems
+                    </p>
+                </div>
+
+                <!-- Professional Grid Layout -->
+                <div class="about__professional-grid">
+                    <!-- Executive Summary -->
+                    <div class="about__executive-summary">
+                        <div class="about__summary-header">
+                            <div class="about__summary-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                                </svg>
+                            </div>
+                            <h3 class="about__summary-title">Executive Summary</h3>
+                        </div>
+                        <div class="about__summary-content">
+                            <p class="about__summary-text">
+                                Results-driven Data Scientist with 2+ years of experience architecting production-grade AI systems.
+                                Currently at Grid Dynamics, I specialize in Generative AI, RAG pipelines, and multimodal retrieval systems.
+                            </p>
+                            <p class="about__summary-text">
+                                Proven track record in building scalable ML architectures that achieve 92%+ accuracy rates.
+                                Expert in AWS Bedrock integration, agent orchestration, and hybrid reranking strategies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Key Achievements -->
+                    <div class="about__key-achievements">
+                        <div class="about__achievement">
+                            <div class="about__achievement-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div class="about__achievement-content">
+                                <h4>92% Retrieval Accuracy</h4>
+                                <p>Achieved industry-leading accuracy through advanced hybrid reranking algorithms</p>
+                            </div>
+                        </div>
+
+                        <div class="about__achievement">
+                            <div class="about__achievement-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <div class="about__achievement-content">
+                                <h4>Production AI Systems</h4>
+                                <p>Architected and deployed multi-agent platforms serving enterprise clients</p>
+                            </div>
+                        </div>
+
+                        <div class="about__achievement">
+                            <div class="about__achievement-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                </svg>
+                            </div>
+                            <div class="about__achievement-content">
+                                <h4>AWS Bedrock Integration</h4>
+                                <p>Expert in routing complex requests through AWS Bedrock infrastructure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Timeline -->
+                <div class="about__professional-timeline">
+                    <div class="about__timeline-header">
+                        <div class="about__timeline-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="about__timeline-title">Professional Journey</h3>
+                    </div>
+
+                    <div class="about__timeline">
+                        <div class="about__timeline-item about__timeline-item--current">
+                            <div class="about__timeline-marker">
+                                <div class="about__timeline-dot"></div>
+                                <div class="about__timeline-line"></div>
+                            </div>
+                            <div class="about__timeline-content">
+                                <div class="about__timeline-date">2023 - Present</div>
+                                <h4 class="about__timeline-role">Data Scientist</h4>
+                                <div class="about__timeline-company">Grid Dynamics</div>
+                                <p class="about__timeline-description">
+                                    Leading development of multi-agent platforms and MCP servers. Architecting RAG systems
+                                    with 92% retrieval accuracy using hybrid reranking strategies. Integrating AWS Bedrock
+                                    for complex agent workflows.
+                                </p>
+                                <div class="about__timeline-tags">
+                                    <span class="about__tag">AI/ML</span>
+                                    <span class="about__tag">RAG</span>
+                                    <span class="about__tag">AWS</span>
+                                    <span class="about__tag">Python</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section - Enterprise Design -->
+        <section id="skills" class="section skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading" class="section__title">Technical Expertise</h2>
+                <p class="section__description">
+                    Specialized in cutting-edge AI technologies and scalable system architecture
+                </p>
+                
+                <!-- Core Competencies -->
+                <div class="skills__core">
+                    <div class="skills__core-header">
+                        <h3 class="skills__core-title">Core Competencies</h3>
+                        <div class="skills__core-stats">
+                            <div class="stat-mini">
+                                <span class="stat-mini__number">2+</span>
+                                <span class="stat-mini__label">Years</span>
+                            </div>
+                            <div class="stat-mini">
+                                <span class="stat-mini__number">8+</span>
+                                <span class="stat-mini__label">Projects</span>
+                            </div>
+                            <div class="stat-mini">
+                                <span class="stat-mini__number">95%</span>
+                                <span class="stat-mini__label">Accuracy</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proficiency Rings -->
+                    <div class="skills__proficiency">
+                        <div class="proficiency-ring">
+                            <div class="proficiency-ring__circle">
+                                <svg class="proficiency-ring__svg" viewBox="0 0 120 120">
+                                    <circle cx="60" cy="60" r="54" stroke="var(--color-border)" stroke-width="6" fill="none"/>
+                                    <circle cx="60" cy="60" r="54" stroke="var(--color-primary)" stroke-width="6" fill="none" 
+                                            stroke-dasharray="339.3" stroke-dashoffset="33.93" 
+                                            stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                                </svg>
+                                <div class="proficiency-ring__content">
+                                    <span class="proficiency-ring__percent">95%</span>
+                                    <span class="proficiency-ring__label">AI/ML</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="proficiency-ring">
+                            <div class="proficiency-ring__circle">
+                                <svg class="proficiency-ring__svg" viewBox="0 0 120 120">
+                                    <circle cx="60" cy="60" r="54" stroke="var(--color-border)" stroke-width="6" fill="none"/>
+                                    <circle cx="60" cy="60" r="54" stroke="var(--color-secondary)" stroke-width="6" fill="none" 
+                                            stroke-dasharray="339.3" stroke-dashoffset="50.895" 
+                                            stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                                </svg>
+                                <div class="proficiency-ring__content">
+                                    <span class="proficiency-ring__percent">85%</span>
+                                    <span class="proficiency-ring__label">Cloud</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="proficiency-ring">
+                            <div class="proficiency-ring__circle">
+                                <svg class="proficiency-ring__svg" viewBox="0 0 120 120">
+                                    <circle cx="60" cy="60" r="54" stroke="var(--color-border)" stroke-width="6" fill="none"/>
+                                    <circle cx="60" cy="60" r="54" stroke="var(--color-accent)" stroke-width="6" fill="none" 
+                                            stroke-dasharray="339.3" stroke-dashoffset="67.86" 
+                                            stroke-linecap="round" transform="rotate(-90 60 60)"/>
+                                </svg>
+                                <div class="proficiency-ring__content">
+                                    <span class="proficiency-ring__percent">80%</span>
+                                    <span class="proficiency-ring__label">DevOps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Detailed Skills Grid -->
+                <div class="skills__detailed">
+                    <!-- AI & Machine Learning -->
+                    <div class="skill-category skill-category--premium">
+                        <div class="skill-category__header">
+                            <div class="skill-category__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                </svg>
+                            </div>
+                            <h3 class="skill-category__title">AI & Machine Learning</h3>
+                        </div>
+                        <div class="skill-category__content">
+                            <div class="skill-item skill-item--advanced">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Generative AI & RAG</span>
+                                    <div class="skill-item__meta">
+                                        <span class="skill-item__level">Expert</span>
+                                        <span class="skill-item__years">2+ years</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item__bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-item__fill skill-item__fill--expert" style="--skill-percent: 95%"></div>
+                                </div>
+                                <p class="skill-item__description">Production RAG systems, multimodal retrieval, LLM orchestration</p>
+                            </div>
+                            
+                            <div class="skill-item skill-item--advanced">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">NLP & Transformers</span>
+                                    <div class="skill-item__meta">
+                                        <span class="skill-item__level">Advanced</span>
+                                        <span class="skill-item__years">2+ years</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item__bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-item__fill skill-item__fill--advanced" style="--skill-percent: 90%"></div>
+                                </div>
+                                <p class="skill-item__description">HuggingFace, BERT, GPT integration, custom fine-tuning</p>
+                            </div>
+                            
+                            <div class="skill-item skill-item--intermediate">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">PyTorch & TensorFlow</span>
+                                    <div class="skill-item__meta">
+                                        <span class="skill-item__level">Intermediate</span>
+                                        <span class="skill-item__years">1.5+ years</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item__bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-item__fill skill-item__fill--intermediate" style="--skill-percent: 85%"></div>
+                                </div>
+                                <p class="skill-item__description">Model training, optimization, deployment pipelines</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Backend & Cloud -->
+                    <div class="skill-category skill-category--premium">
+                        <div class="skill-category__header">
+                            <div class="skill-category__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                            </div>
+                            <h3 class="skill-category__title">Backend & Cloud</h3>
+                        </div>
+                        <div class="skill-category__content">
+                            <div class="skill-item skill-item--expert">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Python & FastAPI</span>
+                                    <div class="skill-item__meta">
+                                        <span class="skill-item__level">Expert</span>
+                                        <span class="skill-item__years">2+ years</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item__bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-item__fill skill-item__fill--expert" style="--skill-percent: 95%"></div>
+                                </div>
+                                <p class="skill-item__description">REST APIs, async programming, microservices architecture</p>
+                            </div>
+                            
+                            <div class="skill-item skill-item--advanced">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">AWS & Azure</span>
+                                    <div class="skill-item__meta">
+                                        <span class="skill-item__level">Advanced</span>
+                                        <span class="skill-item__years">1.5+ years</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item__bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-item__fill skill-item__fill--advanced" style="--skill-percent: 85%"></div>
+                                </div>
+                                <p class="skill-item__description">Bedrock, AKS, Blob Storage, serverless functions</p>
+                            </div>
+                            
+                            <div class="skill-item skill-item--intermediate">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Docker & Kubernetes</span>
+                                    <div class="skill-item__meta">
+                                        <span class="skill-item__level">Intermediate</span>
+                                        <span class="skill-item__years">1+ year</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item__bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-item__fill skill-item__fill--intermediate" style="--skill-percent: 80%"></div>
+                                </div>
+                                <p class="skill-item__description">Containerization, orchestration, CI/CD pipelines</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Data & Tools -->
+                    <div class="skill-category skill-category--premium">
+                        <div class="skill-category__header">
+                            <div class="skill-category__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                                </svg>
+                            </div>
+                            <h3 class="skill-category__title">Data & Tools</h3>
+                        </div>
+                        <div class="skill-category__content">
+                            <div class="skill-item skill-item--advanced">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Vector Databases</span>
+                                    <div class="skill-item__meta">
+                                        <span class="skill-item__level">Advanced</span>
+                                        <span class="skill-item__years">2+ years</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item__bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-item__fill skill-item__fill--advanced" style="--skill-percent: 90%"></div>
+                                </div>
+                                <p class="skill-item__description">Cassandra, Redis, vector search, hybrid retrieval</p>
+                            </div>
+                            
+                            <div class="skill-item skill-item--advanced">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">SQL & NoSQL</span>
+                                    <div class="skill-item__meta">
+                                        <span class="skill-item__level">Advanced</span>
+                                        <span class="skill-item__years">2+ years</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item__bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-item__fill skill-item__fill--advanced" style="--skill-percent: 85%"></div>
+                                </div>
+                                <p class="skill-item__description">Complex queries, optimization, data modeling</p>
+                            </div>
+                            
+                            <div class="skill-item skill-item--expert">
+                                <div class="skill-item__header">
+                                    <span class="skill-item__name">Git & CI/CD</span>
+                                    <div class="skill-item__meta">
+                                        <span class="skill-item__level">Expert</span>
+                                        <span class="skill-item__years">2+ years</span>
+                                    </div>
+                                </div>
+                                <div class="skill-item__bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-item__fill skill-item__fill--expert" style="--skill-percent: 90%"></div>
+                                </div>
+                                <p class="skill-item__description">Version control, automated testing, deployment pipelines</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tech stack with premium icon design -->
+                <div class="tech-stack">
+                    <h3 class="tech-stack__title">Tech Stack & Tools</h3>
+                    <p class="tech-stack__subtitle">Technologies I work with daily</p>
+                    <div class="tech-stack__grid">
+                        <!-- Python -->
+                        <div class="tech-icon" data-tech="python">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.885 2.1c-7.1 0-6.651 3.07-6.651 3.07v3.19h6.752v1H6.545S2 8.8 2 16.005s4.013 6.912 4.013 6.912H8.33v-3.361s-.235-4.013 3.942-4.013h6.667s3.815.062 3.815-3.669V5.8s.572-3.7-6.869-3.7zm-3.812 2.185a1.282 1.282 0 11.001 2.563 1.282 1.282 0 01-.001-2.563z" fill="url(#python1)"/>
+                                    <path d="M16.085 29.91c7.1 0 6.651-3.07 6.651-3.07v-3.19h-6.751v-1h9.441S30 23.21 30 15.995s-4.013-6.912-4.013-6.912H23.67v3.361s.235 4.013-3.942 4.013h-6.667s-3.815-.062-3.815 3.669v6.074s-.572 3.7 6.839 3.7zm3.812-2.185a1.282 1.282 0 11-.001-2.563 1.282 1.282 0 01.001 2.563z" fill="url(#python2)"/>
+                                    <defs>
+                                        <linearGradient id="python1" x1="10.5" y1="2.1" x2="10.5" y2="15.875">
+                                            <stop stop-color="#387EB8"/>
+                                            <stop offset="1" stop-color="#366994"/>
+                                        </linearGradient>
+                                        <linearGradient id="python2" x1="21.5" y1="29.91" x2="21.5" y2="16.135">
+                                            <stop stop-color="#FFE873"/>
+                                            <stop offset="1" stop-color="#FFD43B"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">Python</span>
+                        </div>
+                        
+                        <!-- FastAPI -->
+                        <div class="tech-icon" data-tech="fastapi">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none">
+                                    <circle cx="16" cy="16" r="14" fill="#009688"/>
+                                    <path d="M16 8L20 16L16 24L12 16L16 8Z" fill="white"/>
+                                    <circle cx="16" cy="16" r="3" fill="#009688"/>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">FastAPI</span>
+                        </div>
+                        
+                        <!-- PyTorch -->
+                        <div class="tech-icon" data-tech="pytorch">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14A14 14 0 0016 2z" fill="#EE4C2C"/>
+                                    <path d="M17.5 7v9.5H8" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                                    <circle cx="17.5" cy="16.5" r="2" fill="white"/>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">PyTorch</span>
+                        </div>
+                        
+                        <!-- Transformers/HuggingFace -->
+                        <div class="tech-icon" data-tech="transformers">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none">
+                                    <rect width="32" height="32" rx="6" fill="#FFD21E"/>
+                                    <path d="M12 10h3v12h-3V10zm5 0h3v12h-3V10z" fill="#000"/>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">Transformers</span>
+                        </div>
+                        
+                        <!-- LangChain -->
+                        <div class="tech-icon" data-tech="langchain">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none">
+                                    <rect width="32" height="32" rx="6" fill="#1C3C3C"/>
+                                    <path d="M8 12h6l3 8 3-8h6" stroke="#4ADE80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">LangChain</span>
+                        </div>
+                        
+                        <!-- AWS -->
+                        <div class="tech-icon" data-tech="aws">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16 2L2 9v14l14 7 14-7V9L16 2z" fill="#FF9900"/>
+                                    <path d="M16 12v8M12 14l4-2 4 2M12 18l4 2 4-2" stroke="#232F3E" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">AWS</span>
+                        </div>
+                        
+                        <!-- Azure -->
+                        <div class="tech-icon" data-tech="azure">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none">
+                                    <path d="M18 2L8 18h7l-5 12 15-18h-8L18 2z" fill="url(#azure-grad)"/>
+                                    <defs>
+                                        <linearGradient id="azure-grad" x1="8" y1="2" x2="23" y2="30">
+                                            <stop stop-color="#0078D4"/>
+                                            <stop offset="1" stop-color="#00BCF2"/>
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">Azure</span>
+                        </div>
+                        
+                        <!-- Docker -->
+                        <div class="tech-icon" data-tech="docker">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none">
+                                    <path d="M14 11h3v3h-3v-3zm4 0h3v3h-3v-3zm-8 0h3v3h-3v-3zm4-4h3v3h-3V7z" fill="#2496ED"/>
+                                    <path d="M27 14c-1-1-3-1-4 0-1-4-4-6-8-6v2c3 0 5 1 6 4H7c-1 0-2 1-2 2v2c0 4 3 7 7 7h4c5 0 9-3 10-7 2 0 3-1 3-2 0-1-1-2-2-2z" fill="#2496ED"/>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">Docker</span>
+                        </div>
+                        
+                        <!-- Kubernetes -->
+                        <div class="tech-icon" data-tech="kubernetes">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none">
+                                    <path d="M16 2L4 8v12l12 6 12-6V8L16 2zm0 4l8 4v8l-8 4-8-4v-8l8-4z" fill="#326CE5"/>
+                                    <circle cx="16" cy="16" r="3" fill="#fff"/>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">Kubernetes</span>
+                        </div>
+                        
+                        <!-- Redis -->
+                        <div class="tech-icon" data-tech="redis">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none">
+                                    <path d="M30 22L16 28 2 22V18l14 6 14-6v4zm0-8L16 20 2 14v-4l14 6 14-6v4z" fill="#DC382D"/>
+                                    <path d="M16 4L2 10l14 6 14-6L16 4z" fill="#A41E11"/>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">Redis</span>
+                        </div>
+                        
+                        <!-- PostgreSQL/Cassandra -->
+                        <div class="tech-icon" data-tech="database">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none">
+                                    <ellipse cx="16" cy="8" rx="12" ry="4" fill="#336791"/>
+                                    <path d="M4 8v8c0 2.2 5.4 4 12 4s12-1.8 12-4V8" fill="#336791"/>
+                                    <path d="M4 16v8c0 2.2 5.4 4 12 4s12-1.8 12-4v-8" fill="#336791" opacity="0.8"/>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">Cassandra</span>
+                        </div>
+                        
+                        <!-- Git -->
+                        <div class="tech-icon" data-tech="git">
+                            <div class="tech-icon__wrapper">
+                                <svg class="tech-icon__svg" viewBox="0 0 32 32" fill="none">
+                                    <path d="M30.3 14.3L17.7 1.7c-.9-.9-2.5-.9-3.4 0L11.5 4.5l2.7 2.7c1-.3 2.1-.1 2.8.6.7.7.9 1.8.6 2.8l2.6 2.6c1-.3 2.1-.1 2.8.6 1.1 1.1 1.1 2.9 0 4s-2.9 1.1-4 0c-.8-.8-1-1.9-.6-2.9l-2.4-2.4v6.3c.3.1.5.3.7.5 1.1 1.1 1.1 2.9 0 4s-2.9 1.1-4 0-1.1-2.9 0-4c.3-.3.6-.5 1-.6v-6.4c-.4-.1-.7-.3-1-.6-1-.8-1.1-2-.6-2.9L8.8 6.6 1.7 13.7c-.9.9-.9 2.5 0 3.4l12.6 12.6c.9.9 2.5.9 3.4 0l12.6-12.6c.9-.9.9-2.5 0-3.4z" fill="#F05032"/>
+                                </svg>
+                            </div>
+                            <span class="tech-icon__label">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="section projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading" class="section__title">Featured Projects</h2>
+                <p class="section__description">
+                    A selection of production systems and AI solutions I've architected and deployed.
+                </p>
+                
+                <div class="projects__grid">
+                    <!-- Project 1: Agentas Multi-Agent Platform -->
+                    <article class="project-card" data-category="ai-systems">
+                        <div class="project-card__image">
+                            <!-- Loading skeleton for progressive image load -->
+                            <div class="skeleton skeleton--image"></div>
+                            <img src="assets/images/magent.png" 
+                                 alt="Agentas Multi-Agent Gateway Architecture Diagram"
+                                 loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Agentas Multi-Agent Gateway</h3>
+                            <p class="project-card__description">
+                                FastAPI service routing user requests through AWS Bedrock AgentCore with 
+                                RAI guardrails, orchestrating multi-agent workflows with Redis session management.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag">AWS Bedrock</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">Multi-Agent</span>
+                                <span class="tag">Redis</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="projects/project-1.html" class="btn btn--small btn--primary">View Details</a>
+                                <button class="btn btn--small btn--icon" aria-label="Quick view project">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 2: MCP Server -->
+                    <article class="project-card" data-category="ai-tools">
+                        <div class="project-card__image">
+                            <div class="skeleton skeleton--image"></div>
+                            <img src="assets/images/mcp.png" 
+                                 alt="Model Context Protocol Server Architecture"
+                                 loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">MCP Server Platform</h3>
+                            <p class="project-card__description">
+                                Built a Model Context Protocol server exposing 9 AI tools via REST API with 
+                                CSV-driven dynamic registry and Azure Blob Storage integration on AKS.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag">MCP</span>
+                                <span class="tag">Azure</span>
+                                <span class="tag">AKS</span>
+                                <span class="tag">Async</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="projects/project-2.html" class="btn btn--small btn--primary">View Details</a>
+                                <button class="btn btn--small btn--icon" aria-label="Quick view project">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 3: Multimodal RAG -->
+                    <article class="project-card" data-category="rag">
+                        <div class="project-card__image">
+                            <div class="skeleton skeleton--image"></div>
+                            <img src="assets/images/mmrag.png" 
+                                 alt="Multimodal RAG System Flow Diagram"
+                                 loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Multimodal RAG System</h3>
+                            <p class="project-card__description">
+                                End-to-end RAG system using ColPali, GPT-4o, and Cassandra achieving 92% retrieval 
+                                accuracy with hybrid dense + NER reranking for text-image Q&A.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag">RAG</span>
+                                <span class="tag">ColPali</span>
+                                <span class="tag">GPT-4o</span>
+                                <span class="tag">Cassandra</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="projects/project-3.html" class="btn btn--small btn--primary">View Details</a>
+                                <button class="btn btn--small btn--icon" aria-label="Quick view project">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Project 4: TalentIQ -->
+                    <article class="project-card" data-category="nlp">
+                        <div class="project-card__image">
+                            <div class="skeleton skeleton--image"></div>
+                            <img src="assets/images/copilot.png" 
+                                 alt="TalentIQ Resume Matching Interface"
+                                 loading="lazy">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">TalentIQ AI Recruitment Copilot</h3>
+                            <p class="project-card__description">
+                                AI-powered resume-job matching system using LLMs improving candidate fit by 40% 
+                                with Streamlit UI and Firebase authentication.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag">LLM</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">Streamlit</span>
+                                <span class="tag">Firebase</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <a href="projects/project-4.html" class="btn btn--small btn--primary">View Details</a>
+                                <button class="btn btn--small btn--icon" aria-label="Quick view project">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Process Section -->
+        <section class="section process" aria-labelledby="process-heading">
+            <div class="container">
+                <h2 id="process-heading" class="section__title">My Approach</h2>
+                <p class="section__description">
+                    How I transform ideas into production-ready AI systems.
+                </p>
+                
+                <div class="process__timeline">
+                    <div class="process__step">
+                        <div class="process__number" aria-hidden="true">01</div>
+                        <h3 class="process__step-title">Research & Discovery</h3>
+                        <p class="process__step-description">
+                            Deep dive into the problem space, review state-of-the-art research, 
+                            and identify the optimal AI architecture.
+                        </p>
+                    </div>
+                    
+                    <div class="process__step">
+                        <div class="process__number" aria-hidden="true">02</div>
+                        <h3 class="process__step-title">Prototype & Validate</h3>
+                        <p class="process__step-description">
+                            Build rapid prototypes with core functionality, validate assumptions 
+                            through experiments, and iterate based on metrics.
+                        </p>
+                    </div>
+                    
+                    <div class="process__step">
+                        <div class="process__number" aria-hidden="true">03</div>
+                        <h3 class="process__step-title">Scale & Optimize</h3>
+                        <p class="process__step-description">
+                            Architect for production with proper observability, optimize for latency 
+                            and throughput, and implement robust error handling.
+                        </p>
+                    </div>
+                    
+                    <div class="process__step">
+                        <div class="process__number" aria-hidden="true">04</div>
+                        <h3 class="process__step-title">Deploy & Monitor</h3>
+                        <p class="process__step-description">
+                            Deploy with CI/CD pipelines, implement comprehensive monitoring, 
+                            and continuously improve based on real-world usage.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section__title">Get In Touch</h2>
+                <p class="section__description">
+                    Interested in collaborating on AI projects or discussing opportunities? Let's connect.
+                </p>
+                
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <svg class="contact__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <div>
+                                <h3 class="contact__item-title">Email</h3>
+                                <a href="mailto:vaishnavivyshu6265@gmail.com" class="contact__link">vaishnavivyshu6265@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <svg class="contact__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <div>
+                                <h3 class="contact__item-title">LinkedIn</h3>
+                                <a href="https://linkedin.com/in/vaishnavi-nissankararao" class="contact__link" target="_blank" rel="noopener noreferrer">linkedin.com/in/vaishnavi-nissankararao</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item">
+                            <svg class="contact__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <div>
+                                <h3 class="contact__item-title">GitHub</h3>
+                                <a href="https://github.com/vaishnavin" class="contact__link" target="_blank" rel="noopener noreferrer">github.com/vaishnavin</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact form -->
+                    <form class="contact__form" action="mailto:vaishnavivyshu6265@gmail.com" method="get" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="contact-name" class="form-label">Name</label>
+                            <input type="text" id="contact-name" name="name" class="form-input" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-email" class="form-label">Email</label>
+                            <input type="email" id="contact-email" name="email" class="form-input" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact-message" class="form-label">Message</label>
+                            <textarea id="contact-message" name="message" class="form-textarea" rows="5" required aria-required="true"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+                        
+                        <!-- Status message (populated by JS) -->
+                        <div class="form-status" role="status" aria-live="polite" aria-atomic="true"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__text">
+                    &copy; 2025 Vaishnavi N.
+                </p>
+                <div class="footer__social">
+                    <a href="https://linkedin.com/in/vaishnavi-nissankararao" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/vaishnavin" class="footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:vaishnavivyshu6265@gmail.com" class="footer__social-link" aria-label="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Project modal (populated dynamically) -->
+    <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__container">
+            <button class="modal__close" data-close-modal aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal__content">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main JavaScript -->
+    <script src="js/main.js" defer></script>
+</body>
+</html>
